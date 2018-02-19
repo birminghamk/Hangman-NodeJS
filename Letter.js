@@ -1,21 +1,23 @@
-var letter = function(character, guess) {
+var Letter = function(char, guess) {
 			this.character = character;
 			this.guess = false;
-			this.returnLetter = function(e) {
+			this.returnLetter = function() {
 				if(this.character == ' ') {
 					this.guess = true;
-				}
-				if(this.guess = false) {
+				} else (this.guess = false) {
 					return ' _ ';
-				} else {
-					return this.letter
 				}
-
 			}
 
-			this.
+			this.checkLetter = function (userCharacter) {
+				if (character === userCharacter) {
+					this.guess = true;
+				} else {
+					this.guess = false;
+				}
+			} 
 
-		}
+		} // END LETTER CONSTRUCTOR
 
 //export to use in word.js
-module.exports = letter;
+module.exports = Letter;

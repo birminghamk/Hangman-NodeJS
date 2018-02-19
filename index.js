@@ -17,8 +17,13 @@ inquirer.
 
 
 
-	]).then(function(inquirerResponse){
+	]).then(function(user){
 
+		if (user.start) {
+			console.log("Let's Get Started!")
+		} else {
+			console.log("Come back soon!");
+		}
 
 
 

@@ -1,3 +1,7 @@
-letter = require("./Letter.js");
+Letter = require("./Letter.js");
 
-function Word () 
+var Word = function () {
+
+}
+
+module.exports = Word;
