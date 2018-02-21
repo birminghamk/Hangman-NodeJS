@@ -1,23 +1,34 @@
-var Letter = function(char, guess) {
+var Letter = function(character) {
 			this.character = character;
-			this.guess = false;
+			this.guessed = false;
+
 			this.returnLetter = function() {
-				if(this.character == ' ') {
-					this.guess = true;
-				} else (this.guess = false) {
-					return ' _ ';
+				if(this.guessed == false) {
+					console.log('_');
+				} else  {
+					console.log(this.character);
 				}
 			}
 
-			this.checkLetter = function (userCharacter) {
-				if (character === userCharacter) {
-					this.guess = true;
-				} else {
-					this.guess = false;
-				}
+			this.checkLetter = function (userChar) {
+				userChar = "O";
+				if (character == userChar) {
+					this.guessed = true;
+				// 	console.log(this.guessed);
+				// 	console.log(userChar);
+				// 	console.log(this.character);
+				// } 
 			} 
 
 		} // END LETTER CONSTRUCTOR
 
 //export to use in word.js
 module.exports = Letter;
+
+// var O = new Letter("O");
+
+// O.checkLetter();
+
+
+
+

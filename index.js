@@ -1,4 +1,5 @@
 inquirer = require("inquirer");
+var Word = require("./Word.js");
 
 inquirer.
 	prompt([
