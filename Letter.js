@@ -11,16 +11,16 @@ var Letter = function(character) {
 			}
 
 			this.checkLetter = function (userChar) {
-				userChar = "O";
+				userChar = "";
 				if (character == userChar) {
 					this.guessed = true;
 				// 	console.log(this.guessed);
 				// 	console.log(userChar);
 				// 	console.log(this.character);
-				// } 
+				} 
 			} 
 
-		} // END LETTER CONSTRUCTOR
+} // END LETTER CONSTRUCTOR
 
 //export to use in word.js
 module.exports = Letter;

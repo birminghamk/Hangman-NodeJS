@@ -1,24 +1,23 @@
-var Letter = require("./letter.js");
+var Letter = require("./Letter.js");
 
-var Word = function () {
+var Word = function (wordArr) {
 	this.wordArr = [];
 	this.addWord = function(character) {
 		this.wordArr.push(new Letter(character));
-		console.log("word added");
-		console.log(wordArr);
+		
 	};
-	this.returnWord = function () {
+	this.returnWord = function (returnLetter) {
 		console.log(wordArr.join(''));
+		
 	};
+
 
 };
 
+var firstWord = new Word (["O", "D", "E", "S", "Z", "A"]);
+
+firstWord.returnWord();
+
 module.exports = Word;
-
-var purple = new Word ();
-
-purple.addWord("O");
-
-
 
 
